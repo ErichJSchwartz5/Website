@@ -1,3 +1,4 @@
+/*area for over all styles*/
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,8 @@ p {
     box-shadow: 3px 3px 5px #888888;
     text-align: center;
 }
+
+/*area for class styles*/
 .headerContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,6 +85,8 @@ p {
 .bodyText{
     background-color: #4982f5;
 }
+
+/*area for id styles*/
 #navbar{ 
     list-style: none;
 }
@@ -94,4 +99,8 @@ p {
 }
 #secondaryTitle{
     font-size: 1rem; 
+}
+#navbar> li>a:link{
+    color: black;
+    text-decoration: none;
 }
