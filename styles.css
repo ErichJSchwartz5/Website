@@ -16,7 +16,6 @@ p {
 .headerContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     background-color: whitesmoke;
@@ -25,15 +24,16 @@ p {
 .navbarContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
-    align-items: right;
-    justify-self: right;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
     align-content: space-between;
     list-style: none;
     font-size: .75rem;
     padding: 0px 0px 0px 100px;
 }
 .dropbtn {
+    font-size: .75rem;
     background-color: whitesmoke;
     color: black;
     border: none;
@@ -47,8 +47,8 @@ p {
   
   /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    visibility: hidden !important;
-    display: none !important;
+    display: none;
+    list-style: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -68,7 +68,8 @@ p {
   .dropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+    display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: darkgray;}
@@ -86,7 +87,10 @@ p {
 }
 #navbar> li{ 
     display: inline-block;
-    list-style: none;   
+    list-style: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;   
 }
 #secondaryTitle{
     font-size: 1rem; 
