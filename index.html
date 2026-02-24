@@ -1,78 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Erich J Schwartz</title>
-        <link href="./styles.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <section id="header">
-            <div class="headerContainer">
-                <div class="title"> 
-                    <h1 id="MainTitle">Erich J Schwartz</h1>
-                    <h2 id="secondaryTitle">Economist and PhD Student</h2>
-                </div>
-               
-                <div class="navbarContainer">
-                    <ul id="navbar">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#work">Selected works</a></li>
-                        <li><a href="#contact me">Contact me</a></li>
-                        <li class="dropdown">
-                            <ul>
-                            <a class="dropbtn">Downloads</a>
-                            <div class="dropdown-content" id="hiddenContent">
-                                <li ><a href="./assets/ErichJSchwartz_CV Nov23.pdf">Curriculm Vitas</a></li>
-                            </div>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <div class="bodyText">
-        <section id="about">
-            <img src="./assets/Headshot_cropped.JPG" height="500" class="headshot" alt="Image of erich Schwartz"/>
-            <div class="text-block about">
-            <p>I am currently a PhD student in the Department of Economics at the University of Hawaii-Manoa, 
-                where I am also a teaching assistant. I previously earned my MA in International Relations from the Graduate School
-                of Asia-Pacific Studies (GSAPS) at Waseda University in 2022. I also previously worked as a research assistant for the 
-                Waseda Institute of Digital Government. Before pursuing my graduate degrees, I was an associate examiner for the U.S. Farm Credit Administration.</p>
-            </div>
-            </section>
-        <section id="research">
-            <div class="text-block about">
-            <p>My niche involves the intersection of East Asian
-                Studies and Economics. My fields of interest are development economics, 
-                political economy, experimental economics (both field and laboratory), 
-                and applied microeconomics, particularly in East and Southeast Asia. 
-            </p>
-        </div>
-        </section>
-        <section id="work">
-            <div class="text-block about">
-            <p>
-                MA Thesis: High Speed Rail
-                Opening and Economic Agglomeration Effects
-                in Western China. (2022)
-            </p>
-        </div>
-        </section>
-        <section id="contactMe">
-            <div class="contact">
-                <h2>Contact Me</h2>
-                <p id="contactP">Feel free to get in touch with me through the following methods:</p>
-                <ul id="contactMethods">
-                    <li>Email: <a href="mailto:erichjs@hawaii.edu">erichjs@hawaii.edu</a></li>
-                </ul>
-        </div>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erich J. Schwartz — Economist & PhD Candidate</title>
+  <meta name="description" content="Erich Josef Schwartz — PhD Candidate in Economics at the University of Hawaii at Manoa. Research in economic development, regional economics, political economy, and East Asian studies." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Erich J. Schwartz — Economist & PhD Candidate" />
+  <meta property="og:description" content="PhD Candidate in Economics, University of Hawaii at Manoa. Research in economic development, political economy, and East Asian studies." />
+  <meta property="og:type" content="website" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-        <section id="footer">
+  <!-- ========== NAVIGATION ========== -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+      <a href="#hero" class="nav-brand">Erich J. Schwartz</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#papers">Papers</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#conferences">Conferences</a></li>
+        <li><a href="#cv-download" class="nav-cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </section>
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="section section--hero">
+      <div class="hero-inner container">
+        <div class="hero-photo-col">
+          <div class="hero-photo">
+            <img src="./assets/Headshot_cropped.JPG" alt="Portrait of Erich Josef Schwartz" />
+          </div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">PhD Candidate in Economics</p>
+          <h1 class="hero-name">Erich Josef<br />Schwartz</h1>
+          <p class="hero-institution">University of Hawai&#x02BB;i at M&#x0101;noa</p>
+          <p class="hero-bio">
+            I am currently a research assistant for Dr. Steven Bond-Smith at the University of Hawaii Economic Research Organization (UHERO). We investigate the economic performance of Hawaii from a regional economic development framework and are organizing the Hawaiian Economic Development Institute (work in progress).
+          </p>
+          <div class="hero-keywords" aria-label="Research keywords">
+            <span class="keyword-badge">Economic Development</span>
+            <span class="keyword-badge">Regional Development</span>
+            <span class="keyword-badge">Political Economy</span>
+            <span class="keyword-badge">Experimental Economics</span>
+            <span class="keyword-badge">Asian Studies</span>
+          </div>
+          <div class="hero-links" aria-label="Contact and profile links">
+            <a href="mailto:erichjs@hawaii.edu" class="hero-link" aria-label="Email erichjs@hawaii.edu">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              erichjs@hawaii.edu
+            </a>
+            <a href="mailto:erichjschwartz5@gmail.com" class="hero-link" aria-label="Alternate email erichjschwartz5@gmail.com">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              erichjschwartz5@gmail.com
+            </a>
+            <a href="tel:+15183696018" class="hero-link" aria-label="Phone (518) 369-6018">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.3 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.5 5.5l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (518) 369-6018
+            </a>
+            <a href="https://scholar.google.com/citations?user=2YruFW8AAAAJ&hl=en&oi=sra" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://orcid.org/0009-0007-7309-5564" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.875-1.444 3.875-3.722 0-1.841-1.169-3.722-3.781-3.722h-2.391z"/></svg>
+              ORCID
+            </a>
+          </div>
+          <div id="cv-download" class="hero-cv">
+            <a href="./assets/ErichJSchwartz_CV Nov23.pdf" class="btn-primary" download aria-label="Download Curriculum Vitae PDF">
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section id="education" class="section fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-institution">University of Hawai&#x02BB;i at M&#x0101;noa</h3>
+                  <p class="card-degree">PhD in Economics</p>
+                </div>
+                <div class="card-meta-right">
+                  <span class="card-date">Aug 2022 – Expected May 2027</span>
+                  <span class="card-location">Honolulu, HI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-institution">Waseda University</h3>
+                  <p class="card-dept">Graduate School of Asia-Pacific Studies</p>
+                  <p class="card-degree">MA in International Relations</p>
+                  <p class="card-advisors">Advisors: Dr. Atsushi Kato (primary), Dr. Tomoo Kikuchi</p>
+                </div>
+                <div class="card-meta-right">
+                  <span class="card-date">Sep 2020 – Sep 2022</span>
+                  <span class="card-location">Tokyo, JP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-institution">George Mason University</h3>
+                  <p class="card-degree">BS in Economics <span class="card-honors-inline">— Magna Cum Laude</span></p>
+                  <p class="card-advisors">Minors in Chinese Language &amp; Northeast-Asia Pacific Studies</p>
+                </div>
+                <div class="card-meta-right">
+                  <span class="card-date">Aug 2015 – May 2019</span>
+                  <span class="card-location">Fairfax, VA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HONORS ========== -->
+    <section id="honors" class="section section--alt fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Honors &amp; Scholarships</h2>
+        <ul class="honors-list" role="list">
+          <li class="honors-item">
+            <span class="honors-bullet" aria-hidden="true"></span>
+            <div>
+              <span class="honors-name">Burnham O. Campbell Scholarship</span>
+              <span class="honors-year">2024</span>
+            </div>
+          </li>
+          <li class="honors-item">
+            <span class="honors-bullet" aria-hidden="true"></span>
+            <div>
+              <span class="honors-name">Monbukagakusho Scholarship</span>
+              <span class="honors-org">Japanese MEXT</span>
+              <span class="honors-year">2022</span>
+            </div>
+          </li>
+          <li class="honors-item">
+            <span class="honors-bullet" aria-hidden="true"></span>
+            <div>
+              <span class="honors-name">Certificate of Merit / GSAPS High Honors List</span>
+              <span class="honors-org">Waseda GSAPS</span>
+              <span class="honors-year">2021</span>
+            </div>
+          </li>
+          <li class="honors-item">
+            <span class="honors-bullet" aria-hidden="true"></span>
+            <div>
+              <span class="honors-name">Excellence in Academic Achievement Award</span>
+              <span class="honors-org">GMU Dept. of Economics</span>
+              <span class="honors-year">2019</span>
+            </div>
+          </li>
+          <li class="honors-item">
+            <span class="honors-bullet" aria-hidden="true"></span>
+            <div>
+              <span class="honors-name">Excellence in the Chinese Minor</span>
+              <span class="honors-org">GMU Chinese Program</span>
+              <span class="honors-year">2019</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== RESEARCH ========== -->
+    <section id="research" class="section fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Research Experience</h2>
+        <div class="research-grid">
+
+          <article class="card research-card">
+            <div class="research-card-header">
+              <h3 class="research-title">University of Hawaii Economic Research Organization (UHERO) Graduate Assistantship</h3>
+              <div class="research-meta">
+                <span class="research-role">Secondary Investigator</span>
+                <span class="research-date">May 2025 – Present</span>
+              </div>
+            </div>
+            <p class="research-supervisor">Supervisor: Dr. Steven Bond-Smith (UH Manoa / UHERO)</p>
+            <p class="research-desc">Worked with Dr. Bond-Smith to write reports and recommendations to diagnose Hawaii's economic situation, with a focus on adjusting Hawaii's income statistics for local prices and examining slower than average growth rates. Performed statistical analysis, wrote and edited reports, created graphics, charts, and tables.</p>
+          </article>
+
+          <article class="card research-card">
+            <div class="research-card-header">
+              <h3 class="research-title">Chinese Cultural Revolution Violence and Contemporary Governance</h3>
+              <div class="research-meta">
+                <span class="research-role">Sole Investigator</span>
+                <span class="research-date">Oct 2025 – Present</span>
+              </div>
+            </div>
+            <p class="research-desc">Second dissertation chapter examining the long-term effects of Cultural Revolution violence on governance outcomes in contemporary China. Presenting at Western Economic Association International Conference, Bangkok, Thailand, April 2026.</p>
+          </article>
+
+          <article class="card research-card">
+            <div class="research-card-header">
+              <h3 class="research-title">Chinese Development Finance and Host Country Democracy</h3>
+              <div class="research-meta">
+                <span class="research-role">Sole Investigator</span>
+                <span class="research-date">Mar 2024 – Present</span>
+              </div>
+            </div>
+            <p class="research-desc">First dissertation chapter, an analysis of Belt and Road Initiative effects on democratic institutions in recipient countries. Presented at Western Economic Association San Francisco Conference, June 2025.</p>
+          </article>
+
+          <article class="card research-card">
+            <div class="research-card-header">
+              <h3 class="research-title">Estimating the Economic Need and Environmental Impact of Investments in Natural Gas Pipeline Infrastructure</h3>
+              <div class="research-meta">
+                <span class="research-role">Secondary Investigator</span>
+                <span class="research-date">Jun 2023 – Jun 2024</span>
+              </div>
+            </div>
+            <p class="research-supervisor">Mentor: Dr. Michael Roberts (UH Manoa)</p>
+            <p class="research-desc">Used SWITCH modelling to determine optimal level of natural gas infrastructure investment needs with endogenous price and supply and demand response.</p>
+          </article>
+
+          <article class="card research-card">
+            <div class="research-card-header">
+              <h3 class="research-title">Waseda Institute of Digital Government</h3>
+              <div class="research-meta">
+                <span class="research-role">Secondary Investigator</span>
+                <span class="research-date">Sep 2021 – Jul 2022</span>
+              </div>
+            </div>
+            <p class="research-supervisor">Mentors: Dr. Toshio Obi (Waseda University — Emeritus), Dr. Naoko Iwasaki (Waseda University)</p>
+            <p class="research-desc">Researched and edited the Waseda International Digital Government Rankings 2021. Provided policy suggestions for reports. Researched and wrote a report on bilateral investment between the US and Indonesia/Vietnam.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEACHING ========== -->
+    <section id="teaching" class="section section--alt fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Teaching Experience</h2>
+        <p class="section-subtitle">Lecturer, Department of Economics — University of Hawai&#x02BB;i at M&#x0101;noa</p>
+        <div class="teaching-list">
+
+          <div class="card teaching-card">
+            <div class="teaching-card-header">
+              <div>
+                <span class="teaching-code">ECON 442</span>
+                <h3 class="teaching-name">Development Economics</h3>
+              </div>
+              <span class="teaching-term">Summer 2025</span>
+            </div>
+            <p class="teaching-desc">Theoretical foundation and empirical evidence for analyzing key issues facing today's developing world. Topics include characteristics of underdeveloped economies, economic growth, structural change, poverty, inequality, education, population growth, foreign aid, and the financial sector.</p>
+          </div>
+
+          <div class="card teaching-card">
+            <div class="teaching-card-header">
+              <div>
+                <span class="teaching-code">ECON 301</span>
+                <h3 class="teaching-name">Intermediate Microeconomics</h3>
+              </div>
+              <span class="teaching-term">Summer 2025</span>
+            </div>
+            <p class="teaching-desc">Develops basic techniques and fundamental concepts of microeconomic theory. Learn to use economic reasoning to understand the social consequences of decisions made by individual consumers, producers, and governments.</p>
+          </div>
+
+          <div class="card teaching-card">
+            <div class="teaching-card-header">
+              <div>
+                <span class="teaching-code">ECON 256</span>
+                <h3 class="teaching-name">Data Analysis and Visualization</h3>
+              </div>
+              <span class="teaching-term">Summer 2024</span>
+            </div>
+            <p class="teaching-desc">Designed to help develop basic techniques of data analysis and visualization. Introduces sources of economic data; methods of preparing data from various file and data formats for analysis; methods of visualization.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORKING PAPERS ========== -->
+    <section id="papers" class="section fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Working Papers</h2>
+        <div class="coming-soon">
+          <p>Working papers coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PUBLICATIONS ========== -->
+    <section id="publications" class="section section--alt fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Publications &amp; Other Works</h2>
+        <ol class="publications-list" reversed>
+
+          <li class="publication-item">
+            <p class="pub-citation">
+              Bond-Smith, S., &amp; Schwartz, E. (2026, February 1).
+              <a href="https://uhero.hawaii.edu/beyond-the-price-of-paradise-is-hawaii-being-left-behind/" class="pub-link" target="_blank" rel="noopener noreferrer">Beyond the price of paradise: Is Hawai&#x02BB;i being left behind?</a>
+              <em>University of Hawai&#x02BB;i Economic Research Organization (UHERO).</em>
+            </p>
+          </li>
+
+          <li class="publication-item">
+            <p class="pub-citation">
+              Schwartz, E. (2022).
+              <em>High speed rail opening and economic agglomeration effects in Western China</em>
+              [Master's thesis, Waseda University].
+            </p>
+          </li>
+
+        </ol>
+
+        <!-- Media Coverage subsection -->
+        <h3 class="subsection-title">Media Coverage</h3>
+        <ul class="media-list" role="list">
+          <li class="media-item">
+            <span class="media-icon" aria-hidden="true">&#9656;</span>
+            <div>
+              <span class="media-headline">"Limited Income Growth Slows Isle Economy"</span>
+              <span class="media-outlet">— <em>Honolulu Star-Advertiser</em></span>
+            </div>
+          </li>
+          <li class="media-item">
+            <span class="media-icon" aria-hidden="true">&#9656;</span>
+            <div>
+              <span class="media-headline">"Hawai&#x02BB;i's Cost Of Living Is High. But There's Another Huge Problem"</span>
+              <span class="media-outlet">— <em>Honolulu Civil Beat</em></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CONFERENCES ========== -->
+    <section id="conferences" class="section fade-in-section">
+      <div class="container">
+        <h2 class="section-title">Conferences</h2>
+        <div class="conferences-list">
+
+          <div class="conference-item">
+            <div class="conference-date-col">
+              <span class="conference-year">2026</span>
+            </div>
+            <div class="conference-body">
+              <span class="conference-status conference-status--upcoming">Upcoming</span>
+              <h3 class="conference-venue">WEAI 18th International Conference, Bangkok</h3>
+              <p class="conference-paper">"Chinese Cultural Revolution Violence and Contemporary Governance"</p>
+              <p class="conference-details">Presenting April 4, 2026</p>
+            </div>
+          </div>
+
+          <div class="conference-item">
+            <div class="conference-date-col">
+              <span class="conference-year">2025</span>
+            </div>
+            <div class="conference-body">
+              <h3 class="conference-venue">The 10th Annual International Conference in Hawai&#x02BB;i</h3>
+              <p class="conference-paper">"Chinese Development Finance and Host Country Political Institutions"</p>
+              <p class="conference-details">Presented September 30, 2025</p>
+            </div>
+          </div>
+
+          <div class="conference-item">
+            <div class="conference-date-col">
+              <span class="conference-year">2025</span>
+            </div>
+            <div class="conference-body">
+              <h3 class="conference-venue">WEAI 100th Conference, San Francisco</h3>
+              <p class="conference-paper">"Chinese Development Finance and Host Country Political Institutions"</p>
+              <p class="conference-details">Presented June 26, 2025</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Reviewer subsection -->
+        <h3 class="subsection-title">Reviewer</h3>
+        <ul class="reviewer-list" role="list">
+          <li class="reviewer-item">
+            <span class="reviewer-bullet" aria-hidden="true"></span>
+            <em>Economic Development and Cultural Change</em>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Erich J. Schwartz</p>
+        <p class="footer-title">PhD Candidate in Economics<br />University of Hawai&#x02BB;i at M&#x0101;noa</p>
+      </div>
+      <div class="footer-center">
+        <p><a href="mailto:erichjs@hawaii.edu" class="footer-link">erichjs@hawaii.edu</a></p>
+        <p><a href="tel:+15183696018" class="footer-link">(518) 369-6018</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="https://scholar.google.com/citations?user=2YruFW8AAAAJ&hl=en&oi=sra" class="footer-link" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://orcid.org/0009-0007-7309-5564" class="footer-link" target="_blank" rel="noopener noreferrer">ORCID</a>
+      </div>
     </div>
-    </body>
+    <div class="footer-copy">
+      <p>&copy; 2026 Erich J. Schwartz</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
